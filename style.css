@@ -1,0 +1,95 @@
+/* Overall body styles */
+body {
+  margin: 20px;
+
+  /* Add 20px padding around the entire document content. */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  ul,
+  ol {
+    padding: 0 20px;
+    list-style: outside disc;
+  }
+
+  /* Styles for the image slider element */
+  #image-slider {
+    display: flex;
+    /* Arrange image elements side-by-side. */
+    width: 500px;
+    /* Set the slider width. */
+    height: 300px;
+    /* Set the slider height. */
+    overflow: hidden;
+    /* Hide any images overflowing the container. */
+  }
+
+  /* Styles for each image within the slider */
+  #image-slider img {
+    flex: 1;
+    /* Allocate equal space to each image based on available space. */
+    opacity: 0;
+    /* Initially, hide each image. */
+    transition: opacity 0.5s ease-in-out;
+    /* Smoothly fade images in and out over 0.5 seconds. */
+  }
+
+  #prev-button,
+  #next-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  #prev-button {
+    left: 10px;
+  }
+
+  #next-button {
+    right: 10px;
+  }
+
+  .tip-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+
+  .tip-card h2 {
+    margin-bottom: 5px;
+  }
+
+  .tip-card p {
+    line-height: 1.5;
+  }
+
+  .tip-card img {
+    align-self: center;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
